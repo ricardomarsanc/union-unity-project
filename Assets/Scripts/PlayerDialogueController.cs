@@ -15,6 +15,7 @@ public class PlayerDialogueController : MonoBehaviour
         if (other.tag == "NPC")
         {
             textObject.SetActive(true);
+            dialogue = other.gameObject.GetComponent<DialogueTrigger>().dialogue;
         }
     }
 
@@ -22,21 +23,36 @@ public class PlayerDialogueController : MonoBehaviour
     {
         if (other.tag == "NPC")
         {
-            textObject.SetActive(false);
             dialogue = null;
+            textObject.SetActive(false); 
         }
     }
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && textObject.activeSelf)
+
+        if (dialogueManager.isDialogueActive)
         {
-            if(dialogue != null)
+            if (Input.GetKeyDown(KeyCode.E)) {
+                dialogueManager.DisplayNextSentence();
+            }
+            return;
+        }
+        else
+        {
+            GetComponent<PlayerController>().enabled = true;
+            GetComponent<PlayerDash>().enabled = true;
+
+            if (Input.GetKeyDown(KeyCode.E) && dialogue != null)
             {
                 dialogueManager.StartDialogue(dialogue);
-            }
+                dialogueManager.DisplayNextSentence();
 
-            Debug.Log("Hablamos");
+                textObject.SetActive(false);
+
+                GetComponent<PlayerController>().enabled = false;
+                GetComponent<PlayerDash>().enabled = false;
+            }
         }
     }
 }

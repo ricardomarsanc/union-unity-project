@@ -8,6 +8,10 @@ public class PlayerDash : MonoBehaviour
     [SerializeField] private float dashSpeed;
     [SerializeField] private float dashTime;
 
+    private Vector3 finalMove;
+
+    public Animator animator;
+
     [SerializeField] private PlayerController controller;
 
     // Update is called once per frame
@@ -15,6 +19,7 @@ public class PlayerDash : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(1))
         {
+            animator.SetBool("isDashing", true);
             StartCoroutine(Dash());
         }
     }
@@ -25,9 +30,14 @@ public class PlayerDash : MonoBehaviour
 
         while(Time.time < startTime + dashTime)
         {
-            controller.playerCtrl.Move(controller.movePlayer * dashSpeed * Time.deltaTime);
+            finalMove = controller.movePlayer;
+            finalMove.y = 0;
+
+            controller.playerCtrl.Move(finalMove * dashSpeed * Time.deltaTime);
 
             yield return null;
+            animator.SetBool("isDashing", false);
         }
+        
     }
 }

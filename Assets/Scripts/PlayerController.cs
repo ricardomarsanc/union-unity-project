@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public CharacterController playerCtrl;
+    public Animator animator;
 
     public Vector3 moveDirection;
     public Vector3 movePlayer;
@@ -36,7 +37,10 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         if(playerCtrl.isGrounded && velocity.y < 0)
+        {
+            animator.SetBool("isJumping", false);
             velocity.y = -2f;
+        }
 
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
@@ -44,19 +48,16 @@ public class PlayerController : MonoBehaviour
         moveDirection = new Vector3(horizontal, 0, vertical);
         moveDirection = Vector3.ClampMagnitude(moveDirection, 1);
 
-        moveDirection *= moveSpeed;
+        animator.SetFloat("Speed", moveDirection.magnitude);
 
-        /*if (moveDirection.magnitude > 0.1f) {
-            float targetAngle = Mathf.Atan2(moveDirection.x, moveDirection.z) * Mathf.Rad2Deg + cam.eulerAngles.y;
-            float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmoothVelocity, turnSmoothTime);
-            transform.rotation = Quaternion.Euler(0f, angle, 0f);
-            Vector3 finalMoveDirection = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
-        }*/
+        moveDirection *= moveSpeed;
 
         if(Input.GetButtonDown("Jump"))
         {
             if (playerCtrl.isGrounded)
             {
+                if(!animator.GetBool("isJumping"))
+                    animator.SetBool("isJumping", true);
                 doubleJumpCheck = true;
                 velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
             }
