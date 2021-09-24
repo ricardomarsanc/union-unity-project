@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - NPC
+  - RespawnPoint
+  - Obstacle
+  - UI_TalkText
   layers:
   - Default
   - TransparentFX

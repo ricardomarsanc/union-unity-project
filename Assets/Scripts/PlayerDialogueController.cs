@@ -8,7 +8,18 @@ public class PlayerDialogueController : MonoBehaviour
 
     public GameObject textObject;
     public DialogueManager dialogueManager;
-    public Dialogue dialogue;
+    private Dialogue dialogue;
+    private GameManager gm;
+
+    private void Start()
+    {
+        gm = FindObjectOfType<GameManager>();
+
+        if(dialogueManager == null)
+            dialogueManager = FindObjectOfType<DialogueManager>();
+        if (textObject == null)
+            textObject = gm.UI_TalkText;
+    }
 
     private void OnTriggerEnter(Collider other)
     {

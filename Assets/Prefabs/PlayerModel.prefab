@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 6945943707159968852}
   - component: {fileID: 6945943707159968859}
   - component: {fileID: 961815037}
-  - component: {fileID: 9061569863596987983}
   m_Layer: 0
   m_Name: PlayerModel
   m_TagString: Player
@@ -48,12 +47,12 @@ CharacterController:
   m_Enabled: 1
   serializedVersion: 2
   m_Height: 1.75
-  m_Radius: 0.5
+  m_Radius: 0.3
   m_SlopeLimit: 50
   m_StepOffset: 0.3
-  m_SkinWidth: 0.08
+  m_SkinWidth: 0.01
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0.85, z: 0}
+  m_Center: {x: 0, y: 0.88, z: 0}
 --- !u!114 &6945943707159968852
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -67,11 +66,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerCtrl: {fileID: 6945943707159968854}
+  animator: {fileID: 339429412110338590}
   moveDirection: {x: 0, y: 0, z: 0}
   movePlayer: {x: 0, y: 0, z: 0}
   velocity: {x: 0, y: 0, z: 0}
   moveSpeed: 10
-  jumpHeight: 8
+  jumpHeight: 12
   jumpHeightDouble: 6
   doubleJumpCheck: 0
   mainCamera: {fileID: 0}
@@ -93,6 +93,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dashSpeed: 3
   dashTime: 0.25
+  animator: {fileID: 339429412110338590}
   controller: {fileID: 6945943707159968852}
 --- !u!114 &961815037
 MonoBehaviour:
@@ -108,28 +109,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textObject: {fileID: 0}
   dialogueManager: {fileID: 0}
-  dialogue:
-    name: 
-    sentences: []
---- !u!95 &9061569863596987983
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6945943707159968855}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 66491faa927e34d43932e4645ffe3f7e, type: 3}
-  m_Controller: {fileID: 9100000, guid: def92ec6f3737224cbfafc07cef9970b, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &6187788561289885583
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -205,10 +184,19 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: def92ec6f3737224cbfafc07cef9970b, type: 2}
+    - target: {fileID: 5866666021909216657, guid: b52e68f5a1389464da7a00749a9441de, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b52e68f5a1389464da7a00749a9441de, type: 3}
 --- !u!4 &5932869725822767204 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: b52e68f5a1389464da7a00749a9441de, type: 3}
+  m_PrefabInstance: {fileID: 6187788561289885583}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &339429412110338590 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: b52e68f5a1389464da7a00749a9441de, type: 3}
   m_PrefabInstance: {fileID: 6187788561289885583}
   m_PrefabAsset: {fileID: 0}

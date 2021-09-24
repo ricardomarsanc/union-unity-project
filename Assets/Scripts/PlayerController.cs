@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    private GameManager gameManager;
+
     public CharacterController playerCtrl;
     public Animator animator;
 
@@ -27,6 +29,14 @@ public class PlayerController : MonoBehaviour
 
     private void Start()
     {
+        
+        gameManager = FindObjectOfType<GameManager>();
+
+        if(mainCamera == null)
+        {
+            mainCamera = Camera.main;
+        }
+
         if(playerCtrl == null)
         {
             playerCtrl = GetComponent<CharacterController>();
@@ -36,6 +46,8 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+
         if(playerCtrl.isGrounded && velocity.y < 0)
         {
             animator.SetBool("isJumping", false);
@@ -95,4 +107,12 @@ public class PlayerController : MonoBehaviour
         camRight = camRight.normalized;
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Obstacle")
+        {
+            // @TODO: Play dead animation
+            gameManager.GetComponent<PlayerLifeSystem>().Die();
+        }
+    }
 }
