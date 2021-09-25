@@ -42,7 +42,7 @@ public class GetPoint : MonoBehaviour
             return _point;
         }
 
-        return Vector3.zero;
+        return point == null ? Vector3.zero : point.position;
     }
 
 #if UNITY_EDITOR
