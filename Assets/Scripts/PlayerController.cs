@@ -9,6 +9,8 @@ public class PlayerController : MonoBehaviour
     public CharacterController playerCtrl;
     public Animator animator;
 
+    public InventoryObject playerInventory;
+
     public Vector3 moveDirection;
     public Vector3 movePlayer;
 
@@ -31,6 +33,8 @@ public class PlayerController : MonoBehaviour
     {
         
         gameManager = FindObjectOfType<GameManager>();
+
+        playerInventory = gameManager.PlayerInventory;
 
         if(mainCamera == null)
         {
@@ -114,5 +118,19 @@ public class PlayerController : MonoBehaviour
             // @TODO: Play dead animation
             gameManager.GetComponent<PlayerLifeSystem>().Die();
         }
+        else
+        {
+            // INVENTORY SYSTEM
+            var item = other.GetComponent<Item>();
+            if (item)
+            {
+                Debug.Log("Hello");
+                // Add the item to the generic Inventory which will not be destroyed with the player and then re-asign the inventory to the player
+                gameManager.PlayerInventory.AddItem(item.itemObject);
+                playerInventory = gameManager.PlayerInventory;
+                Destroy(other.gameObject);
+            }
+        }
+
     }
 }
