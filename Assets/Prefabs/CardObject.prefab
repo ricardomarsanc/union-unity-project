@@ -91,6 +91,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5984486166828078588}
   - component: {fileID: 7842243297747632194}
+  - component: {fileID: 1283820132}
   m_Layer: 0
   m_Name: CardObject
   m_TagString: Untagged
@@ -124,5 +125,18 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.98351896
-  m_Center: {x: 0, y: 0.48351896, z: 0}
+  m_Radius: 1.2482634
+  m_Center: {x: 0, y: 0.74826336, z: 0}
+--- !u!114 &1283820132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8755869388474281087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9df1c107def12e14ca667a42e27bf549, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemObject: {fileID: 11400000, guid: 09f5a9c5b15998743a28d59caf230286, type: 2}

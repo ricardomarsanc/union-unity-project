@@ -11,6 +11,11 @@ public class InventoryObject : ScriptableObject
     {
         container.Add(new InventorySlot(_item));
     }
+
+    public void Clear()
+    {
+        container.Clear();
+    }
 }
 
 [System.Serializable]

@@ -6,11 +6,12 @@ public class GameManager : MonoBehaviour
 {
 
     public GameObject UI_TalkText;
+    public GameObject UI_GrabItemText;
     public InventoryObject PlayerInventory;
 
-    private void Start()
+    private void Awake()
     {
-        // @TODO: Uncomment this to reset the Player Inventory each game
-        // PlayerInventory = new InventoryObject();
+        // If removed, the items of the inventory will remain
+        PlayerInventory.Clear();
     }
 }

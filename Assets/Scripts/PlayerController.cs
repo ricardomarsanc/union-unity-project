@@ -29,11 +29,15 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float gravity = -20f;
     [SerializeField] float gravityMultiplier = 2.5f;
 
+    private GameObject activeItem;
+    private GameObject grabItemText;
+
     private void Start()
     {
         
         gameManager = FindObjectOfType<GameManager>();
 
+        grabItemText = gameManager.UI_GrabItemText;
         playerInventory = gameManager.PlayerInventory;
 
         if(mainCamera == null)
@@ -50,7 +54,10 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if (Input.GetKeyDown(KeyCode.G) && activeItem)
+        {
+            GrabItem(activeItem);
+        }
 
         if(playerCtrl.isGrounded && velocity.y < 0)
         {
@@ -111,6 +118,19 @@ public class PlayerController : MonoBehaviour
         camRight = camRight.normalized;
     }
 
+    void GrabItem(GameObject activeItem)
+    {
+        if(activeItem != null)
+        {
+            grabItemText.SetActive(false);
+            var item = activeItem.GetComponent<Item>();
+            // Add the item to the generic Inventory which will not be destroyed with the player and then re-asign the inventory to the player
+            gameManager.PlayerInventory.AddItem(item.itemObject);
+            playerInventory = gameManager.PlayerInventory;
+            Destroy(activeItem);
+        }
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Obstacle")
@@ -124,13 +144,21 @@ public class PlayerController : MonoBehaviour
             var item = other.GetComponent<Item>();
             if (item)
             {
-                Debug.Log("Hello");
-                // Add the item to the generic Inventory which will not be destroyed with the player and then re-asign the inventory to the player
-                gameManager.PlayerInventory.AddItem(item.itemObject);
-                playerInventory = gameManager.PlayerInventory;
-                Destroy(other.gameObject);
+                // Display Text
+                grabItemText.SetActive(true);
+                activeItem = other.gameObject;
             }
         }
+    }
 
+    private void OnTriggerExit(Collider other)
+    {
+        var item = other.GetComponent<Item>();
+        if (item)
+        {
+            // Hide Text
+            grabItemText.SetActive(false);
+            activeItem = null;
+        }
     }
 }
