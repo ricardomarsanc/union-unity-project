@@ -18,7 +18,11 @@ public class AI : MonoBehaviour
     {
         if(!agent.hasPath)
         {
+            // POINT-BASED
             agent.SetDestination(GetPoint.Instance.GetRandomPoint(transform, radius));
+
+            // POSITION-BASED
+            // agent.SetDestination(GetPoint.Instance.GetRandomPoint());
         }
     }
 
