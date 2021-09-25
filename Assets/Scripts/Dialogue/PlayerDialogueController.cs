@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.AI;
 
 public class PlayerDialogueController : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class PlayerDialogueController : MonoBehaviour
     public DialogueManager dialogueManager;
     private Dialogue dialogue;
     private GameManager gm;
+    private GameObject currentNPC;
 
     private void Start()
     {
@@ -27,6 +29,7 @@ public class PlayerDialogueController : MonoBehaviour
         {
             textObject.SetActive(true);
             dialogue = other.gameObject.GetComponent<DialogueTrigger>().dialogue;
+            currentNPC = other.gameObject;
         }
     }
 
@@ -35,6 +38,7 @@ public class PlayerDialogueController : MonoBehaviour
         if (other.tag == "NPC")
         {
             dialogue = null;
+            currentNPC = null;
             textObject.SetActive(false); 
         }
     }
@@ -53,9 +57,12 @@ public class PlayerDialogueController : MonoBehaviour
         {
             GetComponent<PlayerController>().enabled = true;
             GetComponent<PlayerDash>().enabled = true;
+            currentNPC.GetComponent<NavMeshAgent>().isStopped = false;
 
             if (Input.GetKeyDown(KeyCode.E) && dialogue != null)
             {
+                currentNPC.GetComponent<NavMeshAgent>().isStopped = true;
+
                 dialogueManager.StartDialogue(dialogue);
                 dialogueManager.DisplayNextSentence();
 
