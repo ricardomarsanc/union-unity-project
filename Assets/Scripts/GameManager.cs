@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-
     public GameObject UI_TalkText;
     public GameObject UI_GrabItemText;
     public InventoryObject PlayerInventory;

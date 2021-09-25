@@ -6,12 +6,10 @@ public class PlayerInventoryController : MonoBehaviour
 {
 
     public InventoryManager inventoryManager;
-    private GameManager gm;
 
     // Start is called before the first frame update
     void Start()
     {
-        gm = FindObjectOfType<GameManager>();
         inventoryManager = FindObjectOfType<InventoryManager>();
     }
 
@@ -24,7 +22,6 @@ public class PlayerInventoryController : MonoBehaviour
         {
             if (!inventoryManager.isInventoryActive)
             {
-                Debug.Log("Player controller working");
                 inventoryManager.OpenInventory();
             }
             else

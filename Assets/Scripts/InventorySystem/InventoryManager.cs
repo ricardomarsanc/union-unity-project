@@ -12,7 +12,6 @@ public class InventoryManager : MonoBehaviour
 
     public void OpenInventory()
     {
-        Debug.Log("Inventory Open");
         isInventoryActive = true;
         animator.SetBool("inventoryOpen", true);
     }
