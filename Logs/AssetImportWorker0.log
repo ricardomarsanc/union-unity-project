@@ -2839,3 +2839,164 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 7552.113064 seconds.
+  path: Assets/New Terrain 1.asset
+  artifactKey: Guid(9cd4bfb819629cc4dbd043e273019d76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Terrain 1.asset using Guid(9cd4bfb819629cc4dbd043e273019d76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06a82851422b8e3939dde74c49f85861') in 0.061667 seconds 
+  Import took 0.066037 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000125 seconds.
+  path: Assets/New Terrain Material.mat
+  artifactKey: Guid(b8465b71dd83279408445275ca42fcbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Terrain Material.mat using Guid(b8465b71dd83279408445275ca42fcbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d8ceedd33743477980f121d8dbaa599') in 0.099016 seconds 
+  Import took 0.102321 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.806852 seconds.
+  path: Assets/URP/New Terrain Material.mat
+  artifactKey: Guid(15cf0e830460a34459c658577feea336) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/URP/New Terrain Material.mat using Guid(15cf0e830460a34459c658577feea336) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a467b6c9cc3e01f04948e798ff4ad6cb') in 0.009760 seconds 
+  Import took 0.013334 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000119 seconds.
+  path: Assets/URP/Water.mat
+  artifactKey: Guid(6b3a358a349413949a7534aeb9104ee5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/URP/Water.mat using Guid(6b3a358a349413949a7534aeb9104ee5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9adbb21936e64f911c6ac8b70a58bdea') in 0.014536 seconds 
+  Import took 0.018209 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.274879 seconds.
+  path: Assets/URP/WaterFinal
+  artifactKey: Guid(fae6b7537e0550a4589ef34a2d8e9ed1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/URP/WaterFinal using Guid(fae6b7537e0550a4589ef34a2d8e9ed1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5993c27d5a056de0b2c36fee26e7cc8') in 0.004585 seconds 
+  Import took 0.008244 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.121394 seconds.
+  path: Assets/URP/WaterFinal/WaterFinal.shadergraph
+  artifactKey: Guid(4da5794227425274dac700a431ed3bc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/URP/WaterFinal/WaterFinal.shadergraph using Guid(4da5794227425274dac700a431ed3bc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4bc4c15522eab5e20509917747cf92a2') in 0.004023 seconds 
+  Import took 0.007889 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.255363 seconds.
+  path: Assets/URP/WaterFinal/WaterFinal.shadergraph
+  artifactKey: Guid(4da5794227425274dac700a431ed3bc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/URP/WaterFinal/WaterFinal.shadergraph using Guid(4da5794227425274dac700a431ed3bc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4bc4c15522eab5e20509917747cf92a2') in 0.002923 seconds 
+  Import took 0.006540 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.750827 seconds.
+  path: Assets/URP/WaterFinal/WaterFinal.mat
+  artifactKey: Guid(1b77451424e52114ab20aee97378b1cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/URP/WaterFinal/WaterFinal.mat using Guid(1b77451424e52114ab20aee97378b1cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b95807ca1571f9e18845959c28876af') in 0.016972 seconds 
+  Import took 0.021277 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 131.965198 seconds.
+  path: Assets/URP/WaterFinal/WaterFinal.shadergraph
+  artifactKey: Guid(4da5794227425274dac700a431ed3bc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/URP/WaterFinal/WaterFinal.shadergraph using Guid(4da5794227425274dac700a431ed3bc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1549a251af47c85fdb1e1ac0196093b0') in 0.002900 seconds 
+  Import took 0.006635 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 130.850628 seconds.
+  path: Assets/URP/WaterFinal/WaterFinal.shadergraph
+  artifactKey: Guid(4da5794227425274dac700a431ed3bc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/URP/WaterFinal/WaterFinal.shadergraph using Guid(4da5794227425274dac700a431ed3bc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9a2053d61841dfe39d081166a2e9de9') in 0.002487 seconds 
+  Import took 0.006051 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 115.580106 seconds.
+  path: Assets/URP/WaterFinal/WaterFinal.shadergraph
+  artifactKey: Guid(4da5794227425274dac700a431ed3bc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/URP/WaterFinal/WaterFinal.shadergraph using Guid(4da5794227425274dac700a431ed3bc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2567bf1d847a2d0d74b52101fc01c37d') in 0.002820 seconds 
+  Import took 0.007223 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 464.522164 seconds.
+  path: Assets/URP/WaterFinal/DepthFade.shadersubgraph
+  artifactKey: Guid(8be7aae9b95ae1642a5ff039e9f73f07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/URP/WaterFinal/DepthFade.shadersubgraph using Guid(8be7aae9b95ae1642a5ff039e9f73f07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e46edfe8b3b705acd4c7a82a12f6b047') in 0.009735 seconds 
+  Import took 0.016460 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.015434 seconds.
+  path: Assets/URP/WaterFinal/DepthFade.shadersubgraph
+  artifactKey: Guid(8be7aae9b95ae1642a5ff039e9f73f07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/URP/WaterFinal/DepthFade.shadersubgraph using Guid(8be7aae9b95ae1642a5ff039e9f73f07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e46edfe8b3b705acd4c7a82a12f6b047') in 0.002141 seconds 
+  Import took 0.006672 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 293.873766 seconds.
+  path: Assets/URP/WaterFinal/Cutout.shadersubgraph
+  artifactKey: Guid(2931fc53dda59fa45ba3895547bc267d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/URP/WaterFinal/Cutout.shadersubgraph using Guid(2931fc53dda59fa45ba3895547bc267d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92fba54239374678891010a4825bc516') in 0.004873 seconds 
+  Import took 0.009017 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.021148 seconds.
+  path: Assets/URP/WaterFinal/Cutout.shadersubgraph
+  artifactKey: Guid(2931fc53dda59fa45ba3895547bc267d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/URP/WaterFinal/Cutout.shadersubgraph using Guid(2931fc53dda59fa45ba3895547bc267d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92fba54239374678891010a4825bc516') in 0.002253 seconds 
+  Import took 0.006015 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.767153 seconds.
+  path: Assets/URP/WaterFinal/Cutout.shadersubgraph
+  artifactKey: Guid(2931fc53dda59fa45ba3895547bc267d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/URP/WaterFinal/Cutout.shadersubgraph using Guid(2931fc53dda59fa45ba3895547bc267d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0efc7388ead67a3538e60a2cdb7f0b4e') in 0.002069 seconds 
+  Import took 0.005504 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 60.333801 seconds.
+  path: Assets/URP/WaterFinal/Cutout.shadersubgraph
+  artifactKey: Guid(2931fc53dda59fa45ba3895547bc267d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/URP/WaterFinal/Cutout.shadersubgraph using Guid(2931fc53dda59fa45ba3895547bc267d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49df82c34afced7af19d6a092b3cf379') in 0.002006 seconds 
+  Import took 0.005584 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 218.858982 seconds.
+  path: Assets/URP/WaterFinal/Cutout.shadersubgraph
+  artifactKey: Guid(2931fc53dda59fa45ba3895547bc267d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/URP/WaterFinal/Cutout.shadersubgraph using Guid(2931fc53dda59fa45ba3895547bc267d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02b92196bc4e8b7b7bf7c18e3863b29b') in 0.002128 seconds 
+  Import took 0.006067 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 208.643575 seconds.
+  path: Assets/URP/WaterFinal/DepthFade.shadersubgraph
+  artifactKey: Guid(8be7aae9b95ae1642a5ff039e9f73f07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/URP/WaterFinal/DepthFade.shadersubgraph using Guid(8be7aae9b95ae1642a5ff039e9f73f07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00c31f0ca5446979f971493f31953eb7') in 0.001961 seconds 
+  Import took 0.005771 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 850.639077 seconds.
+  path: Assets/Standard Assets/Environment/Water/Water4/Textures/SimpleFoam.png
+  artifactKey: Guid(36dd0b22da8874ed38075789055ca664) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Standard Assets/Environment/Water/Water4/Textures/SimpleFoam.png using Guid(36dd0b22da8874ed38075789055ca664) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ad51a5ef370fd3c7fdcdedfc6d4be11') in 0.017552 seconds 
+  Import took 0.022124 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

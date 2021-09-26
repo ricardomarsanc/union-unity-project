@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: WaterFinal
+  m_Shader: {fileID: -6465566751694194690, guid: 4da5794227425274dac700a431ed3bc5, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_f4df6acd604d44389777eaa06cff0245:
+        m_Texture: {fileID: 2800000, guid: 36dd0b22da8874ed38075789055ca664, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_fbd96ac4e66f4a52946ddd3fa72523a2:
+        m_Texture: {fileID: 2800000, guid: 11154d936b05e66498f68fa178c5cfbb, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - Vector1_040b3b217b164504b0d4969322c2fbc2: 3.09
+    - Vector1_1bbef1c2d8f54058b757d4d061ed8627: 2.25
+    - Vector1_31ea6c94b8b54bb6b2d6083ffa07cace: 1
+    - Vector1_71027d6706ea4762b75944f74cd2d01c: 0.57
+    - Vector1_774f466a2ad34a33992f7b58aa8f0176: 0.1
+    - Vector1_7ebe0c770cf3448488917aa61edead6e: 0.8
+    - Vector1_923e8cf0c16d405dab16fb4ee73dc50d: 0.5
+    - Vector1_b507b1f7f5fc4f04b3a4d53f46f24446: 1.33
+    - Vector1_c40114d380654719b4235784ff0d7cde: 4.65
+    - Vector1_d0b46728203f4504a36fd97acf1e9ecd: 0.73
+    - Vector1_dc19a6f180f64ca488c330c44c1ff9ed: 0.68
+    m_Colors:
+    - Color_3122c3bab8ed4f69871a2d49b689aa8f: {r: 0.7169812, g: 0.6391955, b: 0.6391955, a: 0}
+    - Color_8f9be42efbcf4addbd85c5a89c03b775: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0}
+    - Color_d4241100480842f9b945f200fe2d1ea3: {r: 1, g: 1, b: 1, a: 0}
+    - Color_e39cd474928c4bc1be36ab00097151ee: {r: 0.21092913, g: 0.3666439, b: 0.5660378, a: 0}
+    - Vector2_653a89b12cc8444c80ff86ec340e8235: {r: 0, g: -0.3, b: 0, a: 0}
+  m_BuildTextureStacks: []
