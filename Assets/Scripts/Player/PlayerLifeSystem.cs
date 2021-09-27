@@ -60,6 +60,7 @@ public class PlayerLifeSystem : MonoBehaviour
         vcam.Follow = newPlayer.transform;
         vcam.LookAt = newPlayer.transform;
         player = newPlayer;
+        FindObjectOfType<GameManager>().player = player;
     }
 
     public void Die()
